@@ -1,0 +1,190 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-image: url('bgimg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #333;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(159, 201, 7, 0.84);
+    color: white;
+}
+header h1 {
+    margin: 0;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li {
+    margin-left: 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+.title {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.content {
+    background-color: rgba(211, 105, 139, 0.874);
+    color: rgba(209, 215, 222, 0.884);
+    padding: 20px;
+    text-align: center;
+    border-radius: 4px;
+}
+.content h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.content p {
+    font-size: 18px;
+}
+.services {
+    padding: 50px;
+    text-align: center;
+    background-color: rgba(193, 213, 215, 0.995);
+    margin-top: -50px;
+}
+.services h2 {
+    margin-bottom: 30px;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+.card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.card h3 {
+    margin-top: 15px;
+}
+.card p {
+    font-size: 14px;
+    color: #555;
+}
+.sign-in {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.sign-in h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-bottom: 5px;
+}
+input[type="email"],input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 18px;
+}
+button:hover {
+    background-color: #555;
+}
+footer {
+    background-color: rgba(29, 15, 189, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
+
+/* Media Queries  */
+@media (max-width: 1024px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    .content h2 {
+        font-size: 28px;
+    }
+    .content p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    .content h2 {
+        font-size: 24px;
+    }
+    .content p {
+        font-size: 14px;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    input[type="email"],
+    input[type="password"] {
+        font-size: 16px;
+    }
+    button {
+        font-size: 16px;
+    }
+    .card-container {
+        flex-direction: column;
+    }
+    .card {
+        width: 90%;
+    }
+}
